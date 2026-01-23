@@ -1,0 +1,1187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nsikan Francis Udoh | Executive Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                50: "#f0f9ff",
+                100: "#e0f2fe",
+                200: "#bae6fd",
+                300: "#7dd3fc",
+                400: "#38bdf8",
+                500: "#0ea5e9",
+                600: "#0284c7",
+                700: "#0369a1",
+                800: "#075985",
+                900: "#0c4a6e",
+              },
+            },
+            animation: {
+              float: "float 6s ease-in-out infinite",
+              "fade-in": "fadeIn 0.8s ease-out forwards",
+              "slide-up": "slideUp 0.6s ease-out forwards",
+              "pulse-slow": "pulse 3s ease-in-out infinite",
+              gradient: "gradient 8s ease infinite",
+              "bounce-slow": "bounce 2s infinite",
+              wiggle: "wiggle 1s ease-in-out infinite",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0px)" },
+                "50%": { transform: "translateY(-20px)" },
+              },
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideUp: {
+                "0%": { transform: "translateY(30px)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
+              },
+              gradient: {
+                "0%, 100%": { "background-position": "0% 50%" },
+                "50%": { "background-position": "100% 50%" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Floating Background Elements -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+      <div
+        class="absolute top-1/4 left-10 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow floating-element"
+      ></div>
+      <div
+        class="absolute bottom-1/4 right-10 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow floating-element"
+      ></div>
+      <div
+        class="absolute top-3/4 left-1/3 w-64 h-64 bg-indigo-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse-slow floating-element"
+      ></div>
+    </div>
+
+    <!-- Professional Navigation Bar -->
+    <nav
+      id="navbar"
+      class="bg-white nav-shadow fixed w-full z-50 transition-all duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center space-x-2">
+            <div
+              class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center shadow-lg"
+            >
+              <img
+                src="https://media.licdn.com/dms/image/v2/D4D03AQGSQIDyvRN_Yw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1684617426204?e=1770854400&v=beta&t=khA8FpFcvf2rwe4u108EPcDiUCPP1_l59g0pLN3aKWg"
+              />
+            </div>
+            <span class="text-xl font-bold text-gray-800 hidden md:block"
+              >Nsikan Udoh</span
+            >
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="nav-link text-gray-700 hover:text-indigo-600 font-medium relative group transition-all duration-300"
+            >
+              <span>Home</span>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"
+              ></span>
+            </a>
+            <a
+              href="#about"
+              class="nav-link text-gray-700 hover:text-indigo-600 font-medium relative group transition-all duration-300"
+            >
+              <span>About</span>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"
+              ></span>
+            </a>
+            <a
+              href="#experience"
+              class="nav-link text-gray-700 hover:text-indigo-600 font-medium relative group transition-all duration-300"
+            >
+              <span>Experience</span>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"
+              ></span>
+            </a>
+            <a
+              href="#skills"
+              class="nav-link text-gray-700 hover:text-indigo-600 font-medium relative group transition-all duration-300"
+            >
+              <span>Skills</span>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"
+              ></span>
+            </a>
+            <a
+              href="#contact"
+              class="nav-link text-gray-700 hover:text-indigo-600 font-medium relative group transition-all duration-300"
+            >
+              <span>Contact</span>
+              <span
+                class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 group-hover:w-full transition-all duration-300"
+              ></span>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="menuBtn"
+            class="md:hidden text-gray-700 focus:outline-none relative w-10 h-10"
+          >
+            <div class="hamburger">
+              <span
+                class="block w-6 h-0.5 bg-gray-700 mb-1.5 transition-all duration-300"
+              ></span>
+              <span
+                class="block w-6 h-0.5 bg-gray-700 mb-1.5 transition-all duration-300"
+              ></span>
+              <span
+                class="block w-4 h-0.5 bg-gray-700 transition-all duration-300"
+              ></span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobileMenu"
+          class="hidden md:hidden bg-white py-4 border-t animate-slide-up"
+        >
+          <div class="flex flex-col space-y-4">
+            <a
+              href="#home"
+              class="mobile-nav-link text-gray-700 hover:text-indigo-600 font-medium px-4 py-2 rounded-lg hover:bg-indigo-50 transition-all duration-300 transform hover:translate-x-2"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="mobile-nav-link text-gray-700 hover:text-indigo-600 font-medium px-4 py-2 rounded-lg hover:bg-indigo-50 transition-all duration-300 transform hover:translate-x-2"
+              >About</a
+            >
+            <a
+              href="#experience"
+              class="mobile-nav-link text-gray-700 hover:text-indigo-600 font-medium px-4 py-2 rounded-lg hover:bg-indigo-50 transition-all duration-300 transform hover:translate-x-2"
+              >Experience</a
+            >
+            <a
+              href="#skills"
+              class="mobile-nav-link text-gray-700 hover:text-indigo-600 font-medium px-4 py-2 rounded-lg hover:bg-indigo-50 transition-all duration-300 transform hover:translate-x-2"
+              >Skills</a
+            >
+            <a
+              href="#contact"
+              class="mobile-nav-link text-gray-700 hover:text-indigo-600 font-medium px-4 py-2 rounded-lg hover:bg-indigo-50 transition-all duration-300 transform hover:translate-x-2"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="hero-gradient pt-24 section-padding relative overflow-hidden"
+    >
+      <div class="absolute inset-0 bg-black/10"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col md:flex-row items-center">
+          <div
+            class="md:w-1/2 mb-10 md:mb-0 page-load"
+            style="animation-delay: 0.2s"
+          >
+            <!-- <div class="inline-flex items-center px-4 py-2 rounded-full glass mb-6 animate-fade-in">
+                        <div class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                        <span class="text-sm font-medium text-white">Available for Opportunities</span>
+                    </div> -->
+
+            <h1
+              class="text-4xl md:text-6xl font-bold text-white mb-4 animate-slide-up"
+              style="animation-delay: 0.3s"
+            >
+              <span class="block">Nsikan</span>
+              <span class="block">Francis <span class="">Udoh</span></span>
+            </h1>
+
+            <p
+              class="text-xl text-gray-100 mb-6 animate-slide-up"
+              style="animation-delay: 0.4s"
+            >
+              Professional Leader | Senior Business Analyst  | Business Strategist | Process Analyst | Stakeholder Management
+
+            </p>
+
+            <p
+              class="text-gray-200 mb-8 max-w-2xl animate-slide-up"
+              style="animation-delay: 0.5s"
+            >
+              A results-driven professional with extensive experience in
+              strategic planning, team leadership, and business development.
+            </p>
+
+            <div
+              class="flex flex-wrap gap-4 animate-slide-up"
+              style="animation-delay: 0.6s"
+            >
+              <a
+                href="#contact"
+                class="bg-white text-indigo-700 px-8 py-4 rounded-lg font-semibold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 transform shadow-lg"
+              >
+                Contact Me
+              </a>
+              <a
+                href="#experience"
+                class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+              >
+                View Experience
+              </a>
+            </div>
+
+            <!-- Stats -->
+            <div
+              class="flex gap-8 mt-12 animate-slide-up"
+              style="animation-delay: 0.7s"
+            >
+              <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-1">8+</div>
+                <div class="text-gray-200 text-sm">Years Experience</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-1">50+</div>
+                <div class="text-gray-200 text-sm">Projects</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-white mb-1">100%</div>
+                <div class="text-gray-200 text-sm">Success Rate</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="md:w-1/2 flex justify-center page-load"
+            style="animation-delay: 0.8s"
+          >
+            <div class="relative">
+              <!-- Profile image with animation -->
+              <div
+                class="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-white/30 shadow-2xl animate-float"
+              >
+                <div
+                  class="absolute inset-0 bg-gradient-to-br from-indigo-500/20 to-purple-500/20"
+                ></div>
+                <img
+                  src="assets/images/francis.jpg"
+                  alt="Nsikan Francis Udoh"
+                  class="w-full h-full object-cover"
+                  onerror="
+                    this.src =
+                      'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'
+                  "
+                />
+              </div>
+
+              <!-- Animated rings -->
+              <div
+                class="absolute inset-0 rounded-full border-4 border-indigo-300/30 pulse-ring"
+              ></div>
+
+              <!-- Floating badges -->
+              <div
+                class="absolute -bottom-4 -right-4 glass rounded-2xl p-4 shadow-2xl animate-bounce-slow"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-600 to-purple-600 flex items-center justify-center shadow-lg"
+                  >
+                    <i class="fas fa-award text-white"></i>
+                  </div>
+                  <div>
+                    <div class="font-bold text-gray-800">Top Performer</div>
+                    <div class="text-xs text-gray-600">2025 Award</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="absolute -top-4 -left-4 glass rounded-2xl p-4 shadow-2xl animate-bounce-slow"
+                style="animation-delay: 0.5s"
+              >
+                <div class="flex items-center space-x-3">
+                  <div
+                    class="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg"
+                  >
+                    <i class="fas fa-check text-white"></i>
+                  </div>
+                  <div class="text-sm">
+                    <div class="font-bold text-gray-800">Verified</div>
+                    <div class="text-xs text-gray-600">Profile</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div
+        class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+      >
+        <a href="#about" class="text-white">
+          <i class="fas fa-chevron-down text-2xl"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 page-load">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            About <span class="text-gradient">Me</span>
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6 rounded-full"
+          ></div>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Get to know my professional background and key highlights
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="page-load" style="animation-delay: 0.2s">
+            <div
+              class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-2xl p-8 card-hover"
+            >
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">
+                Professional Background
+              </h3>
+              <p class="text-gray-600 mb-8 leading-relaxed">
+                Dynamic professional with a proven track record in leadership
+                roles. Expertise includes strategic planning, operational
+                efficiency, team development, and driving business growth in
+                competitive environments.
+              </p>
+
+              <div class="space-y-6">
+                <div
+                  class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <div
+                    class="w-12 h-12 rounded-lg bg-indigo-100 flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-800">Location</h4>
+                    <p class="text-gray-600">Lagos, Nigeria</p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <div
+                    class="w-12 h-12 rounded-lg bg-indigo-100 flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-industry text-indigo-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-800">Industry</h4>
+                    <p class="text-gray-600">
+                      Business Development & Leadership
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1"
+                >
+                  <div
+                    class="w-12 h-12 rounded-lg bg-indigo-100 flex items-center justify-center mr-4"
+                  >
+                    <i class="fas fa-graduation-cap text-indigo-600"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-medium text-gray-800">Education</h4>
+                    <p class="text-gray-600">MBA, Business Administration</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-load" style="animation-delay: 0.4s">
+            <h3 class="text-2xl font-bold text-gray-900 mb-8">
+              Key Highlights
+            </h3>
+            <div class="space-y-8">
+              <div
+                class="flex items-start p-6 bg-gradient-to-r from-white to-indigo-50 rounded-2xl shadow-sm card-hover"
+              >
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-lg"
+                  >
+                    <i class="fas fa-chart-line text-white text-2xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold text-gray-900 mb-3">
+                    Strategic Growth
+                  </h4>
+                  <p class="text-gray-600">
+                    Developed and executed business strategies that increased
+                    market share and profitability across multiple industries.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start p-6 bg-gradient-to-r from-white to-indigo-50 rounded-2xl shadow-sm card-hover"
+              >
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-lg"
+                  >
+                    <i class="fas fa-users text-white text-2xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold text-gray-900 mb-3">
+                    Team Leadership
+                  </h4>
+                  <p class="text-gray-600">
+                    Built and mentored high-performance teams that consistently
+                    exceed organizational targets and drive innovation.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex items-start p-6 bg-gradient-to-r from-white to-indigo-50 rounded-2xl shadow-sm card-hover"
+              >
+                <div class="flex-shrink-0 mr-6">
+                  <div
+                    class="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center shadow-lg"
+                  >
+                    <i class="fas fa-lightbulb text-white text-2xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold text-gray-900 mb-3">
+                    Innovation
+                  </h4>
+                  <p class="text-gray-600">
+                    Implemented innovative processes and solutions that improved
+                    operational efficiency by 30%+ in various organizations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding bg-gray-50 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 page-load">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Professional <span class="text-gradient">Experience</span>
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6 rounded-full"
+          ></div>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            A timeline of my career progression and key achievements
+          </p>
+        </div>
+
+        <div class="space-y-12 page-load" style="animation-delay: 0.2s">
+          <!-- Timeline Item 1 -->
+          <div
+            class="timeline-item bg-white rounded-2xl p-8 shadow-lg card-hover"
+          >
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between mb-6"
+            >
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">
+                  Senior Leadership Role
+                </h3>
+                <p class="text-indigo-600 font-medium text-lg mt-2">
+                  Director of Business Development
+                </p>
+              </div>
+              <span
+                class="inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-full text-sm font-medium mt-4 md:mt-0 shadow-lg"
+              >
+                <span
+                  class="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"
+                ></span>
+                Current Position
+              </span>
+            </div>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Leading strategic initiatives and business development activities
+              to drive growth and expand market presence. Responsible for
+              identifying new business opportunities and building strategic
+              partnerships.
+            </p>
+            <ul class="text-gray-600 space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span
+                  >Strategic planning and execution for business expansion</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span
+                  >Team leadership and development of high-performance
+                  teams</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span
+                  >Business growth initiatives and market penetration
+                  strategies</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div
+            class="timeline-item bg-white rounded-2xl p-8 shadow-lg card-hover"
+          >
+            <div
+              class="flex flex-col md:flex-row md:items-center justify-between mb-6"
+            >
+              <div>
+                <h3 class="text-2xl font-bold text-gray-900">
+                  Previous Position
+                </h3>
+                <p class="text-indigo-600 font-medium text-lg mt-2">
+                  Operations Manager
+                </p>
+              </div>
+              <span
+                class="inline-flex items-center px-4 py-2 bg-gray-100 text-gray-800 rounded-full text-sm font-medium mt-4 md:mt-0"
+              >
+                Past Role
+              </span>
+            </div>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Managed day-to-day operations and implemented process improvements
+              to enhance efficiency and productivity. Focused on optimizing
+              workflows and resource allocation.
+            </p>
+            <ul class="text-gray-600 space-y-3">
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span
+                  >Operational efficiency improvements across departments</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                <span>Process optimization and workflow standardization</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check-circle text-green-500 mt=1 mr-3"></i>
+                <span>Team management and cross-functional coordination</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 page-load">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Core <span class="text-gradient">Competencies</span>
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6 rounded-full"
+          ></div>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Specialized skills and expertise developed through years of
+            executive leadership
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Skill Card 1 -->
+          <div
+            class="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-8 card-hover page-load"
+            style="animation-delay: 0.2s"
+          >
+            <div
+              class="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center mb-6 shadow-lg"
+            >
+              <i class="fas fa-chess-king text-white text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Strategic Leadership
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Visionary leadership with ability to develop and execute business
+              strategies that drive growth and competitive advantage.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-gray-700">Strategic Planning</span>
+                <span class="text-indigo-600 font-bold">95%</span>
+              </div>
+              <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div
+                  class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full skill-bar"
+                  data-width="95"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 2 -->
+          <div
+            class="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-8 card-hover page-load"
+            style="animation-delay: 0.4s"
+          >
+            <div
+              class="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center mb-6 shadow-lg"
+            >
+              <i class="fas fa-chart-pie text-white text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Business Development
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Identifying and capitalizing on new business opportunities to
+              expand market reach and increase profitability.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-gray-700">Market Analysis</span>
+                <span class="text-indigo-600 font-bold">92%</span>
+              </div>
+              <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div
+                  class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full skill-bar"
+                  data-width="92"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div
+            class="bg-gradient-to-br from-indigo-50 to-white rounded-2xl p-8 card-hover page-load"
+            style="animation-delay: 0.6s"
+          >
+            <div
+              class="w-16 h-16 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center mb-6 shadow-lg"
+            >
+              <i class="fas fa-comments-dollar text-white text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">
+              Stakeholder Management
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Building and maintaining strong relationships with clients,
+              partners, and internal stakeholders.
+            </p>
+            <div class="space-y-3">
+              <div class="flex items-center justify-between">
+                <span class="text-gray-700">Relationship Building</span>
+                <span class="text-indigo-600 font-bold">88%</span>
+              </div>
+              <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
+                <div
+                  class="h-full bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full skill-bar"
+                  data-width="88"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-gray-50 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16 page-load">
+          <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Get In <span class="text-gradient">Touch</span>
+          </h2>
+          <div
+            class="w-24 h-1 bg-gradient-to-r from-indigo-600 to-purple-600 mx-auto mb-6 rounded-full"
+          ></div>
+          <p class="text-gray-600 max-w-3xl mx-auto">
+            Let's discuss how we can work together to achieve exceptional
+            results
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Contact Information -->
+          <div class="space-y-8 page-load" style="animation-delay: 0.2s">
+            <div class="bg-white rounded-2xl p-8 shadow-lg card-hover">
+              <h3 class="text-2xl font-bold text-gray-900 mb-8">
+                Contact Information
+              </h3>
+              <div class="space-y-8">
+                <div
+                  class="flex items-center p-4 bg-gradient-to-r from-indigo-50 to-white rounded-xl hover:shadow-md transition-all duration-300"
+                >
+                  <div
+                    class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center mr-6 shadow-lg"
+                  >
+                    <i class="fas fa-envelope text-white text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">Email</h4>
+                    <p class="text-gray-600">nsikan.udoh@ekedp.com</p>
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center p-4 bg-gradient-to-r from-indigo-50 to-white rounded-xl hover:shadow-md transition-all duration-300"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/nsikan-francis-udoh-5067a2107/"
+                    target="_blank"
+                    class="flex items-center w-full"
+                  >
+                    <div
+                      class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center mr-6 shadow-lg"
+                    >
+                      <i class="fab fa-linkedin text-white text-xl"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-gray-800 mb-1">LinkedIn</h4>
+                      <p class="text-gray-600">Nsikan Francis Udoh</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div
+                  class="flex items-center p-4 bg-gradient-to-r from-indigo-50 to-white rounded-xl hover:shadow-md transition-all duration-300"
+                >
+                  <div
+                    class="w-14 h-14 flex rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center mr-6 shadow-lg"
+                  >
+                    <i class="fas fa-instagram text-white text-xl"></i>
+                  </div>
+                  <a href="https://wa.me/2348031175154" target="_blank"
+                    ><div>
+                      <h4 class="font-bold text-gray-800 mb-1">Home</h4>
+                      <p class="text-gray-600">+234-803-117-5154</p>
+                    </div></a
+                  >
+                </div>
+                <div
+                  class="flex items-center p-4 bg-gradient-to-r from-indigo-50 to-white rounded-xl hover:shadow-md transition-all duration-300"
+                >
+                  <div
+                    class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center mr-6 shadow-lg"
+                  >
+                    <i class="fas fa-phone text-white text-xl"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-gray-800 mb-1">Mobile</h4>
+                    <p class="text-gray-600">+234-708-619-4164</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Availability -->
+            <div
+              class="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl p-8 text-white shadow-xl"
+            >
+              <h3 class="text-2xl font-bold mb-4">Availability</h3>
+              <p class="mb-6">
+                Currently open to strategic opportunities and partnerships
+              </p>
+              <div class="flex items-center">
+                <div
+                  class="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"
+                ></div>
+                <span class="font-medium"
+                  >Available for Consulting & Leadership Roles</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div
+            class="bg-white rounded-2xl p-8 shadow-xl card-hover page-load"
+            style="animation-delay: 0.4s"
+          >
+            <h3 class="text-2xl font-bold text-gray-900 mb-8">
+              Send a Message
+            </h3>
+            <form id="contactForm" class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-gray-700 font-medium mb-2"
+                    >Your Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    for="email"
+                    class="block text-gray-700 font-medium mb-2"
+                    >Your Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                    required
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-gray-700 font-medium mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 transform shadow-lg"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          class="flex flex-col md:flex-row justify-between items-center mb-8"
+        >
+          <div class="mb-8 md:mb-0 text-center md:text-left">
+            <div
+              class="flex items-center justify-center md:justify-start space-x-3 mb-4"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center"
+              >
+                <img
+                  src="https://media.licdn.com/dms/image/v2/D4D03AQGSQIDyvRN_Yw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1684617426204?e=1770854400&v=beta&t=khA8FpFcvf2rwe4u108EPcDiUCPP1_l59g0pLN3aKWg"
+                />
+              </div>
+              <span class="text-2xl font-bold">Nsikan Francis Udoh</span>
+            </div>
+            <p class="text-gray-400">
+              Executive Portfolio & Professional Leadership
+            </p>
+          </div>
+
+          <div class="flex space-x-6">
+            <a
+              href="https://www.linkedin.com/in/nsikan-francis-udoh-5067a2107/"
+              target="_blank"
+              class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 hover:transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-400 hover:transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center hover:bg-pink-600 hover:transform hover:-translate-y-1 transition-all duration-300"
+            >
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; <span id="currentYear"></span> Nsikan Francis Udoh. All
+            rights reserved.
+          </p>
+          <p class="text-gray-500 text-sm mt-2">
+            Powered by
+            <a
+              style="text-decoration: underline"
+              href="https://builtbymike.vercel.app"
+              >Innopave Technologies</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="backToTop"
+      class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-br from-indigo-600 to-purple-600 rounded-full shadow-2xl hover:shadow-3xl hover:-translate-y-1 transition-all duration-300 transform hidden z-40"
+    >
+      <i class="fas fa-chevron-up text-white text-xl"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <script>
+      // Initialize GSAP
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Page load animation
+      window.addEventListener("load", function () {
+        document.body.classList.add("page-loaded");
+
+        // Animate skill bars
+        gsap.utils.toArray(".skill-bar").forEach((bar) => {
+          const width = bar.getAttribute("data-width") + "%";
+          ScrollTrigger.create({
+            trigger: bar.parentElement.parentElement,
+            start: "top 80%",
+            onEnter: () => {
+              gsap.to(bar, {
+                width: width,
+                duration: 1.5,
+                ease: "power3.out",
+              });
+            },
+          });
+        });
+
+        // Animate section elements on scroll
+        gsap.utils.toArray(".page-load").forEach((el) => {
+          ScrollTrigger.create({
+            trigger: el,
+            start: "top 80%",
+            onEnter: () => {
+              gsap.to(el, {
+                opacity: 1,
+                y: 0,
+                duration: 0.8,
+                ease: "power3.out",
+              });
+            },
+          });
+        });
+      });
+
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const hamburger = menuBtn.querySelector(".hamburger");
+
+      menuBtn.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+
+        // Hamburger animation
+        if (mobileMenu.classList.contains("hidden")) {
+          hamburger.innerHTML = `
+                    <span class="block w-6 h-0.5 bg-gray-700 mb-1.5 transition-all duration-300"></span>
+                    <span class="block w-6 h-0.5 bg-gray-700 mb-1.5 transition-all duration-300"></span>
+                    <span class="block w-4 h-0.5 bg-gray-700 transition-all duration-300"></span>
+                `;
+        } else {
+          hamburger.innerHTML = `
+                    <span class="block w-6 h-0.5 bg-gray-700 mb-1.5 rotate-45 translate-y-2 transition-all duration-300"></span>
+                    <span class="block w-6 h-0.5 bg-gray-700 opacity-0 transition-all duration-300"></span>
+                    <span class="block w-6 h-0.5 bg-gray-700 -rotate-45 -translate-y-1 transition-all duration-300"></span>
+                `;
+        }
+      });
+
+      // Close mobile menu when clicking a link
+      document.querySelectorAll(".mobile-nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+          hamburger.innerHTML = `
+                    <span class="block w-6 h-0.5 bg-gray-700 mb-1.5 transition-all duration-300"></span>
+                    <span class="block w-6 h-0.5 bg-gray-700 mb-1.5 transition-all duration-300"></span>
+                    <span class="block w-4 h-0.5 bg-gray-700 transition-all duration-300"></span>
+                `;
+        });
+      });
+
+      // Navbar scroll effect
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+
+        // Show/hide back to top button
+        const backToTop = document.getElementById("backToTop");
+        if (window.scrollY > 500) {
+          backToTop.classList.remove("hidden");
+          gsap.to(backToTop, { opacity: 1, duration: 0.3 });
+        } else {
+          gsap.to(backToTop, {
+            opacity: 0,
+            duration: 0.3,
+            onComplete: () => backToTop.classList.add("hidden"),
+          });
+        }
+      });
+
+      // Back to top button
+      document.getElementById("backToTop").addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Set current year in footer
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
+
+      // Enhanced form submission
+      const contactForm = document.getElementById("contactForm");
+      contactForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+
+        // Loading state
+        submitBtn.innerHTML =
+          '<i class="fas fa-spinner fa-spin mr-2"></i>Sending...';
+        submitBtn.disabled = true;
+
+        // Simulate API call with animation
+        setTimeout(() => {
+          // Success animation
+          submitBtn.innerHTML =
+            '<i class="fas fa-check mr-2"></i>Message Sent!';
+          submitBtn.classList.remove("from-indigo-600", "to-purple-600");
+          submitBtn.classList.add("from-green-500", "to-emerald-600");
+
+          // Show success message
+          const successMessage = document.createElement("div");
+          successMessage.className =
+            "mt-4 p-4 bg-green-50 text-green-700 rounded-lg animate-fade-in";
+          successMessage.innerHTML =
+            '<i class="fas fa-check-circle mr-2"></i> Your message has been sent successfully!';
+          this.appendChild(successMessage);
+
+          // Reset form after 3 seconds
+          setTimeout(() => {
+            this.reset();
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+            submitBtn.classList.remove("from-green-500", "to-emerald-600");
+            submitBtn.classList.add("from-indigo-600", "to-purple-600");
+            successMessage.remove();
+          }, 3000);
+        }, 2000);
+      });
+
+      // Hover effect for cards
+      document.querySelectorAll(".card-hover").forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          gsap.to(card, {
+            y: -10,
+            duration: 0.3,
+            ease: "power2.out",
+          });
+        });
+
+        card.addEventListener("mouseleave", () => {
+          gsap.to(card, {
+            y: 0,
+            duration: 0.3,
+            ease: "power2.out",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
