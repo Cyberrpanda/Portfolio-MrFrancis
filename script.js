@@ -187,6 +187,32 @@
         });
       });
 
+
+// Animate skill bars on scroll
+document.addEventListener('DOMContentLoaded', function() {
+    const skillBars = document.querySelectorAll('.skill-bar');
+    
+    function animateSkillBars() {
+        skillBars.forEach(bar => {
+            const rect = bar.getBoundingClientRect();
+            const isVisible = (rect.top <= window.innerHeight * 0.9);
+            
+            if (isVisible && !bar.classList.contains('animated')) {
+                const width = bar.getAttribute('data-width') + '%';
+                bar.style.width = width;
+                bar.classList.add('animated');
+            }
+        });
+    }
+    
+    // Animate on scroll
+    window.addEventListener('scroll', animateSkillBars);
+    
+    // Initial animation check
+    animateSkillBars();
+});
+
+
 // Certifications Section Interactions
 function initializeCertificationsSection() {
     // Add Certifications to Navigation
